@@ -16,31 +16,24 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="flex flex-col items-center text-center max-w-xl space-y-4">
-        {/* Hero-Sized Logo */}
-        <div className="w-[320px] sm:w-[520px] h-auto flex items-center justify-center">
+      <div className="flex flex-col items-center text-center w-full max-w-5xl space-y-8">
+        {/* Massive Logo */}
+        <div className="w-[80vw] max-w-[1000px] h-auto flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="BLVNK Coffee Logo"
-            width={800}
-            height={300}
+            width={1200}
+            height={450}
             priority
             className="w-full h-auto object-contain"
           />
         </div>
 
-        {/* Prominent Tagline */}
-        <div className="pt-2">
-          <p className="text-2xl sm:text-3xl text-black font-medium italic tracking-wide font-[family-name:var(--font-nunito)]">
+        {/* Massive Tagline */}
+        <div>
+          <p className="text-5xl sm:text-7xl md:text-8xl font-black italic tracking-tight text-black font-[family-name:var(--font-nunito)]">
             Roastery &amp; Slowbar
           </p>
-        </div>
-
-        {/* Corrected & Spacious Coming Soon Pill */}
-        <div className="pt-8">
-          <span className="inline-block px-10 py-4 border-2 border-black rounded-full text-base sm:text-lg tracking-[0.3em] uppercase text-black font-bold font-mono bg-transparent leading-none">
-            COMING SOON
-          </span>
         </div>
       </div>
     </main>
