@@ -16,22 +16,29 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="flex flex-col items-center text-center w-full max-w-5xl space-y-8">
-        {/* Massive Logo */}
-        <div className="w-[80vw] max-w-[1000px] h-auto flex items-center justify-center">
+      <div className="flex flex-col items-center text-center w-full max-w-2xl space-y-4">
+        {/* Logo reduced to half size */}
+        <div className="w-[380px] sm:w-[480px] h-auto flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="BLVNK Coffee Logo"
-            width={1200}
-            height={450}
+            width={500}
+            height={180}
             priority
             className="w-full h-auto object-contain"
           />
         </div>
 
-        {/* Massive Tagline */}
+        {/* Proportional, significantly larger text forced via inline styles */}
         <div>
-          <p className="text-5xl sm:text-7xl md:text-8xl font-black italic tracking-tight text-black font-[family-name:var(--font-nunito)]">
+          <p 
+            style={{
+              fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
+              letterSpacing: "0.15em",
+              lineHeight: "1.2"
+            }}
+            className="font-light italic text-black font-[family-name:var(--font-nunito)]"
+          >
             Roastery &amp; Slowbar
           </p>
         </div>
