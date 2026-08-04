@@ -16,20 +16,20 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="flex flex-col items-center text-center w-full max-w-2xl space-y-4">
-        {/* Logo reduced to half size */}
-        <div className="w-[380px] sm:w-[480px] h-auto flex items-center justify-center">
+      <div className="flex flex-col items-center text-center w-full max-w-3xl space-y-5">
+        {/* Slightly larger logo width to match the tagline weight */}
+        <div className="w-[520px] sm:w-[680px] h-auto flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="BLVNK Coffee Logo"
-            width={500}
-            height={180}
+            width={700}
+            height={250}
             priority
             className="w-full h-auto object-contain"
           />
         </div>
 
-        {/* Proportional, significantly larger text forced via inline styles */}
+        {/* Tagline text maintained at optimal proportions */}
         <div>
           <p 
             style={{
