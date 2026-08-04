@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 export default function Home() {
-const jsonLd = {
+  const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "CoffeeShop",
+    "@type": "CafeOrCoffeeShop",
     "name": "BLVNK Coffee",
     "alternateName": "BLVNK Coffee Roastery & Slowbar",
     "url": "https://blvnk-coffee.vercel.app",
@@ -51,8 +51,8 @@ const jsonLd = {
           </p>
         </div>
 
-        {/* Social Media Icons (Fixed Equal Dimensions) */}
-        <div className="pt-8 flex items-center justify-center gap-8 text-neutral-800">
+        {/* Scaled & Spaced Social Media Icons */}
+        <div className="pt-6 flex items-center justify-center gap-7">
           {/* Instagram */}
           <a
             href="https://instagram.com/blvnkcoffee"
@@ -64,9 +64,9 @@ const jsonLd = {
             <Image
               src="/ig.svg"
               alt="Instagram"
-              width={24}
-              height={24}
-              className="w-6 h-6 object-contain"
+              width={36}
+              height={36}
+              className="w-8 h-8 sm:w-9 sm:h-9 object-contain"
             />
           </a>
 
@@ -81,9 +81,9 @@ const jsonLd = {
             <Image
               src="/tiktok.svg"
               alt="TikTok"
-              width={24}
-              height={24}
-              className="w-6 h-6 object-contain"
+              width={36}
+              height={36}
+              className="w-8 h-8 sm:w-9 sm:h-9 object-contain"
             />
           </a>
 
@@ -98,9 +98,9 @@ const jsonLd = {
             <Image
               src="/fb.svg"
               alt="Facebook"
-              width={24}
-              height={24}
-              className="w-6 h-6 object-contain"
+              width={36}
+              height={36}
+              className="w-8 h-8 sm:w-9 sm:h-9 object-contain"
             />
           </a>
         </div>
