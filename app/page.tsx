@@ -29,7 +29,7 @@ export default function Home() {
           />
         </div>
 
-        {/* Tagline Matched to Logo Width */}
+        {/* Tagline */}
         <div className="w-full">
           <p 
             style={{
@@ -43,33 +43,57 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Social Media Links */}
-        <div className="pt-8 flex items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm font-mono tracking-widest uppercase text-neutral-600">
+        {/* Social Media Icons (Fixed Equal Dimensions) */}
+        <div className="pt-8 flex items-center justify-center gap-8 text-neutral-800">
+          {/* Instagram */}
           <a
             href="https://instagram.com/blvnkcoffee"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            aria-label="Instagram"
+            className="hover:scale-110 transition-transform duration-200"
           >
-            Instagram
+            <Image
+              src="/ig.svg"
+              alt="Instagram"
+              width={24}
+              height={24}
+              className="w-6 h-6 object-contain"
+            />
           </a>
-          <span>•</span>
+
+          {/* TikTok */}
           <a
             href="https://tiktok.com/@blvnk_coffee"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            aria-label="TikTok"
+            className="hover:scale-110 transition-transform duration-200"
           >
-            TikTok
+            <Image
+              src="/tiktok.svg"
+              alt="TikTok"
+              width={24}
+              height={24}
+              className="w-6 h-6 object-contain"
+            />
           </a>
-          <span>•</span>
+
+          {/* Facebook */}
           <a
             href="https://www.facebook.com/blvnkcoffee"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            aria-label="Facebook"
+            className="hover:scale-110 transition-transform duration-200"
           >
-            Facebook
+            <Image
+              src="/fb.svg"
+              alt="Facebook"
+              width={24}
+              height={24}
+              className="w-6 h-6 object-contain"
+            />
           </a>
         </div>
       </div>
