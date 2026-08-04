@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description: "BLVNK Coffee is a specialty coffee roastery and slowbar offering single-origin pour-overs, artisanal espresso, and custom roasted beans.",
   keywords: ["BLVNK Coffee", "Coffee Roastery", "Slowbar", "Specialty Coffee", "Pour Over Coffee", "Artisanal Espresso"],
   authors: [{ name: "BLVNK Coffee" }],
+  
+  // ADD THIS BLOCK: Paste your code string from Google inside the quotes below
+  verification: {
+    google: "<meta name="google-site-verification" content="EZjnuPQkA_3-SpvUFNmQgPeiIpygKO0mwE7jWfW3ocM" />",
+  },
+
   openGraph: {
     title: "BLVNK Coffee | Specialty Coffee Roastery & Slowbar",
     description: "Specialty coffee roastery and slowbar offering single-origin pour-overs and artisanal espresso.",
