@@ -16,30 +16,30 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="flex flex-col items-center text-center max-w-lg space-y-4">
-        {/* Larger Logo Container */}
-        <div className="relative w-80 h-36 flex items-center justify-center">
+      <div className="flex flex-col items-center text-center max-w-xl space-y-4">
+        {/* Hero-Sized Logo */}
+        <div className="w-[320px] sm:w-[520px] h-auto flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="BLVNK Coffee Logo"
-            width={400}
-            height={180}
+            width={800}
+            height={300}
             priority
-            className="object-contain"
+            className="w-full h-auto object-contain"
           />
         </div>
 
-        {/* Larger Brand Tagline */}
-        <div>
-          <p className="text-2xl sm:text-3xl text-neutral-800 font-light italic tracking-wider font-[family-name:var(--font-nunito)]">
+        {/* Prominent Tagline */}
+        <div className="pt-2">
+          <p className="text-2xl sm:text-3xl text-black font-medium italic tracking-wide font-[family-name:var(--font-nunito)]">
             Roastery &amp; Slowbar
           </p>
         </div>
 
-        {/* Spacious Coming Soon Badge */}
-        <div className="pt-6">
-          <span className="inline-block px-10 py-3.5 border border-black rounded-full text-sm sm:text-base tracking-[0.3em] uppercase text-black font-mono bg-transparent">
-            Coming Soon
+        {/* Corrected & Spacious Coming Soon Pill */}
+        <div className="pt-8">
+          <span className="inline-block px-10 py-4 border-2 border-black rounded-full text-base sm:text-lg tracking-[0.3em] uppercase text-black font-bold font-mono bg-transparent leading-none">
+            COMING SOON
           </span>
         </div>
       </div>
