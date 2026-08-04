@@ -1,30 +1,28 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-
-const jayagiriSans = localFont({
-  src: "./fonts/ja.ttf",
-  variable: "--font-jayagiri",
-});
-
-const nunitoSans = localFont({
-  src: "./fonts/NunitoSans.ttf",
-  variable: "--font-nunito",
-});
-
+<meta name="google-site-verification" content="EZjnuPQkA_3-SpvUFNmQgPeiIpygKO0mwE7jWfW3ocM" />
 export const metadata: Metadata = {
-  title: "BLVNK Coffee | Coming Soon",
-  description: "Specialty Coffee Roastery & Slowbar. Coming Soon.",
+  title: "BLVNK Coffee | Specialty Coffee Roastery & Slowbar",
+  description: "BLVNK Coffee is a specialty coffee roastery and slowbar offering single-origin pour-overs, artisanal espresso, and custom roasted beans.",
+  keywords: ["BLVNK Coffee", "Coffee Roastery", "Slowbar", "Specialty Coffee", "Pour Over Coffee", "Artisanal Espresso"],
+  authors: [{ name: "BLVNK Coffee" }],
+  openGraph: {
+    title: "BLVNK Coffee | Specialty Coffee Roastery & Slowbar",
+    description: "Specialty coffee roastery and slowbar offering single-origin pour-overs and artisanal espresso.",
+    url: "https://blvnk-coffee.vercel.app",
+    siteName: "BLVNK Coffee",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "BLVNK Coffee Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" className={`${nunitoSans.variable} ${jayagiriSans.variable}`}>
-      <body className="bg-white text-black antialiased font-sans">{children}</body>
-    </html>
-  );
-}

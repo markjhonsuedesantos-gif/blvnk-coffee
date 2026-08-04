@@ -1,11 +1,19 @@
 import Image from "next/image";
 
 export default function Home() {
-  const jsonLd = {
+const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CoffeeShop",
-    "name": "BLVNK Coffee: Roastery and Slowbar",
-    "description": "Specialty coffee roastery and slowbar offering single-origin pour-overs and artisanal espresso.",
+    "name": "BLVNK Coffee",
+    "alternateName": "BLVNK Coffee Roastery & Slowbar",
+    "url": "https://blvnk-coffee.vercel.app",
+    "logo": "https://blvnk-coffee.vercel.app/logo.png",
+    "description": "BLVNK Coffee is a specialty coffee roastery and slowbar dedicated to single-origin pour-overs and hand-crafted espresso drinks.",
+    "sameAs": [
+      "https://instagram.com/blvnkcoffee",
+      "https://tiktok.com/@blvnk_coffee",
+      "https://www.facebook.com/blvnkcoffee"
+    ],
     "priceRange": "$$"
   };
 
