@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${nunitoSans.variable} ${jayagiriSans.variable}`}>
-      <body className="bg-black text-white antialiased font-sans">{children}</body>
+      <body className="bg-white text-black antialiased font-sans">{children}</body>
     </html>
   );
 }
