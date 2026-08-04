@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   keywords: ["BLVNK Coffee", "Coffee Roastery", "Slowbar", "Specialty Coffee", "Pour Over Coffee", "Artisanal Espresso"],
   authors: [{ name: "BLVNK Coffee" }],
   
-  // ADD THIS BLOCK: Paste your code string from Google inside the quotes below
+  // Only include the verification string (e.g. "EZjnuPQkA_3-SpvUFNmQgPeiIpygKO...")
   verification: {
-    google: "<meta name="google-site-verification" content="EZjnuPQkA_3-SpvUFNmQgPeiIpygKO0mwE7jWfW3ocM" />",
+    google: "EZjnuPQkA_3-SpvUFNmQgPeiIpygKO...", 
   },
 
   openGraph: {
