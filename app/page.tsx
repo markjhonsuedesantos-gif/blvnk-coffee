@@ -16,31 +16,61 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="flex flex-col items-center text-center w-full max-w-3xl space-y-5">
-        {/* Slightly larger logo width to match the tagline weight */}
-        <div className="w-[520px] sm:w-[680px] h-auto flex items-center justify-center">
+      <div className="flex flex-col items-center text-center w-full max-w-xl space-y-3">
+        {/* Logo Container */}
+        <div className="w-[85vw] max-w-[480px] h-auto flex items-center justify-center">
           <Image
             src="/logo.png"
             alt="BLVNK Coffee Logo"
-            width={700}
-            height={250}
+            width={600}
+            height={220}
             priority
             className="w-full h-auto object-contain"
           />
         </div>
 
-        {/* Tagline text maintained at optimal proportions */}
-        <div>
+        {/* Tagline Matched to Logo Width */}
+        <div className="w-full">
           <p 
             style={{
-              fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
-              letterSpacing: "0.15em",
+              fontSize: "clamp(1.4rem, 4vw, 2.2rem)",
+              letterSpacing: "0.18em",
               lineHeight: "1.2"
             }}
             className="font-light italic text-black font-[family-name:var(--font-nunito)]"
           >
             Roastery &amp; Slowbar
           </p>
+        </div>
+
+        {/* Social Media Links */}
+        <div className="pt-8 flex items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm font-mono tracking-widest uppercase text-neutral-600">
+          <a
+            href="https://instagram.com/blvnkcoffee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black transition-colors"
+          >
+            Instagram
+          </a>
+          <span>•</span>
+          <a
+            href="https://tiktok.com/@blvnk_coffee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black transition-colors"
+          >
+            TikTok
+          </a>
+          <span>•</span>
+          <a
+            href="https://www.facebook.com/blvnkcoffee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black transition-colors"
+          >
+            Facebook
+          </a>
         </div>
       </div>
     </main>
