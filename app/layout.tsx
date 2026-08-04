@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-<meta name="google-site-verification" content="EZjnuPQkA_3-SpvUFNmQgPeiIpygKO0mwE7jWfW3ocM" />
+import "./globals.css";
+
 export const metadata: Metadata = {
   title: "BLVNK Coffee | Specialty Coffee Roastery & Slowbar",
   description: "BLVNK Coffee is a specialty coffee roastery and slowbar offering single-origin pour-overs, artisanal espresso, and custom roasted beans.",
@@ -26,3 +27,15 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
