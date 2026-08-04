@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   
   // Only include the verification string (e.g. "EZjnuPQkA_3-SpvUFNmQgPeiIpygKO...")
   verification: {
-    google: "EZjnuPQkA_3-SpvUFNmQgPeiIpygKO...", 
+    google: "EZjnuPQkA_3-SpvUFNmQgPeiIpygKO0mwE7jWfW3ocM", 
   },
 
   openGraph: {
